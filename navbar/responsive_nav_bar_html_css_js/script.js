@@ -17,10 +17,13 @@ const navSlide = () => {
                 link.style.animation = '';
             }
             else {
-                link.style.animation = `navLinkFade 0.5 ease forwards ${index / 7 + 0.5}s`;
-                console.log(index / 7 + 0.5 );
+                link.style.animation = `navLinkFade 0.5 ease forwards ${index / 8 + 1.5}s`;
+                console.log(index / 8 + 1.5 );
             }
         });
+        //Burger Animation
+        burger.classList.toggle('toggle');
+
     });
 }
 

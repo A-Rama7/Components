@@ -32,6 +32,7 @@ nav
 {
     display: flex;
     gap: 3rem;
+    transition: 0.5s ease;
 }
 
 .nav-links li
@@ -62,6 +63,7 @@ nav
     margin: 5px;
     border-radius: 3px;
     background-color: ghostwhite;
+    transition: all 0.3s ease;
 }
 
 /* ---MEDIA QUERIES--- */
@@ -107,15 +109,31 @@ nav
 .nav-active
 {
     transform: translateY(0%);
+    transition: 0.5s ease;
 }
 
 @keyframes navLinkFade {
     from{
         opacity: 0;
-        transform:translateY(50px);
+        transform:translateY(100px);
     }
     to{
         opacity: 1;
         transform:translateY(0px);
     }
+}
+
+.toggle .line1
+{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2
+{
+    opacity: 0;
+}
+
+.toggle .line3
+{
+    transform: rotate(45deg) translate(-5px,-6px);
 }
